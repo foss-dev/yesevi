@@ -7,6 +7,7 @@
  */
 
 return [
+    'title' => 'Yesevi CRM Homepage',
     'menu' => 'Menu',
     'home' => 'Home',
     'customers' => 'Customers',
@@ -14,5 +15,11 @@ return [
     'sales' => 'Sales',
     'orders' => 'Orders',
     'profile' => 'Profile',
-    'logout' => 'Logout'
+    'logout' => 'Logout',
+    'total-income' => 'Total Income',
+    'total-expenses' => 'Total Expenses',
+    'total-customers' => 'Total Customers',
+    'total-orders' => 'Total Orders',
+    '404-not-found' => '404 Not Found :/',
+    '404-message' => 'The page you try to open couldn\'t found on the server. We\'re sorry.'
 ];

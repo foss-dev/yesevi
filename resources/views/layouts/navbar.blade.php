@@ -47,7 +47,7 @@
                 @endguest
                 @auth
                         <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link" href="{{ url('profile') }}">
+                            <a class="navbar-link" href="#">
                                 {{ __('messages.profile') }}
                             </a>
                             <div class="navbar-dropdown is-boxed">

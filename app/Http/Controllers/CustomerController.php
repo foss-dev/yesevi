@@ -17,15 +17,7 @@ class CustomerController extends Controller
     {
         $customers = Customer::all();
 
-        return view('home', ['customers' => $customers]);
-    }
-
-    public function get(Request $request)
-    {
-        $id = $request->id;
-        $customers = Customer::where('id', $id)->get();
-
-        return view('home', ['customers' => $customers]);
+        return view('customers/customers', ['customers' => $customers]);
     }
 
     public function store(Request $req)
