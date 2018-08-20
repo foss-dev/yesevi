@@ -1,0 +1,21 @@
+.sidebar {
+    height: 100vh !important;
+    background: #2e363f !important;
+}
+
+.sidebar .menu-list a:hover {
+    color: #2e363f !important;
+}
+
+.sidebar .menu-list a.is-active,
+.sidebar .menu-list a.is-active:hover {
+    color: #ffffff !important;
+    background: #00d1b2 !important;
+}
+
+.sidebar a {
+    color: #afb8c3 !important;
+}
+.sidebar-label {
+    color: #00d1b2 !important;
+}
