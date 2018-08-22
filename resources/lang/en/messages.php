@@ -29,6 +29,7 @@ return [
     'yes' => 'Yes',
     'no' => 'No',
     'customer-groups' => 'Customer Groups',
+    'company' => 'Company',
     'contact-info' => 'Contact Information',
     'safe' => 'Safe',
     'account-activities' => 'Account Activities',
