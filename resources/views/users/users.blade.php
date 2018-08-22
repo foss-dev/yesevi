@@ -10,14 +10,11 @@
 
         <div class="container column is-9">
             <div class="section">
-                @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                @endif
-
-
+                <div class="columns">
+                    <div class="column"><button class="button is-info add-new-user"><span><i class="fas fa-user-plus"></i> Add New User</span></button></div>
+                </div>
                 <div class="table-container">
+
                     <table class="table is-bordered is-striped is-hoverable is-fullwidth table-responsive">
                         <thead>
                         <tr>
@@ -44,3 +41,5 @@
         </div>
     </section>
 @endsection
+
+@include('modals.user')
