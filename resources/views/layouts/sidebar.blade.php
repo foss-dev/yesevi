@@ -48,11 +48,37 @@
             </a>
         </li>
     </ul>
+    <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.safe')  }}</p>
+    <ul class="menu-list">
+        <li>
+            <a href="{{ url('safe/account-activities')  }}" class="">
+                <span class="icon"><i class="fas fa-chart-line"></i></span> {{ __('messages.account-activities')  }}
+            </a>
+        </li>
+        <li>
+            <a href="{{ url('safe/account-balances')  }}" class="">
+                <span class="icon"><i class="fas fa-money-bill"></i></span> {{ __('messages.account-balances')  }}
+            </a>
+        </li>
+        <li>
+            <a href="{{ url('safe/account-to-account-transfer')  }}" class="">
+                <span class="icon"><i class="fas fa-piggy-bank"></i></span> {{ __('messages.account-to-account')  }}
+            </a>
+        </li>
+    </ul>
     <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.users')  }}</p>
     <ul class="menu-list">
         <li>
             <a href="{{ url('users')  }}" class="">
                 <span class="icon"><i class="fas fa-user-friends"></i></span> {{ __('messages.users')  }}
+            </a>
+        </li>
+    </ul>
+    <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.company')  }}</p>
+    <ul class="menu-list">
+        <li>
+            <a href="{{ url('users')  }}" class="">
+                <span class="icon"><i class="fas fa-info"></i></span> {{ __('messages.contact-info')  }}
             </a>
         </li>
     </ul>
