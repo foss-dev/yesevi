@@ -35,6 +35,8 @@ return [
     'account-activities' => 'Account Activities',
     'account-balances' => 'Account Balances',
     'account-to-account' => 'Transfer',
+    'username' => 'Username',
+    'email' => 'E-Mail',
     '404-not-found' => '404 Not Found :/',
     '404-message' => 'The page you try to open couldn\'t found on the server. We\'re sorry.'
 ];
