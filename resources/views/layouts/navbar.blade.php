@@ -1,4 +1,4 @@
-<nav class="navbar is-transparent">
+<nav class="navbar is-info">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
             <img src="https://bulma.io/images/bulma-logo.png" alt="" width="112" height="28">
@@ -52,6 +52,7 @@
                             </a>
                             <div class="navbar-dropdown is-boxed">
                                 <a href="{{ url('profile') }}" class="navbar-item">{{ __('messages.profile') }}</a>
+                                <a href="{{ url('notes') }}" class="navbar-item">{{ __('messages.notes') }}</a>
                                 <a href="{{ url('logout')  }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="navbar-item">{{ __('messages.logout')  }}</a>
                             </div>

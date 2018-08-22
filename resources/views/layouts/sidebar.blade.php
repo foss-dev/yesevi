@@ -26,11 +26,33 @@
             </a>
         </li>
     </ul>
+    <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.products')  }}</p>
+    <ul class="menu-list">
+        <li>
+            <a href="{{ url('products')  }}" class="">
+                <span class="icon"><i class="fab fa-product-hunt"></i></span> {{ __('messages.products')  }}
+            </a>
+            <a href="{{ url('stocks')  }}" class="">
+                <span class="icon"><i class="fab fa-stripe-s"></i></span> {{ __('messages.stocks')  }}
+            </a>
+            <a href="{{ url('suppliers')  }}" class="">
+                <span class="icon"><i class="fas fa-parachute-box"></i></span> {{ __('messages.suppliers')  }}
+            </a>
+            <a href="{{ url('sellers')  }}" class="">
+                <span class="icon"><i class="fab fa-sellcast"></i></span> {{ __('messages.sellers')  }}
+            </a>
+        </li>
+    </ul>
     <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.profile')  }}</p>
     <ul class="menu-list">
         <li>
             <a href="{{ url('profile')  }}" class="">
                 <span class="icon"><i class="fas fa-user"></i></span> {{ __('messages.profile')  }}
+            </a>
+        </li>
+        <li>
+            <a href="{{ url('notes')  }}" class="">
+                <span class="icon"><i class="fas fa-sticky-note"></i></span> {{ __('messages.notes')  }}
             </a>
         </li>
         <li>

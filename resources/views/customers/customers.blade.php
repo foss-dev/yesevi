@@ -27,17 +27,17 @@
                     </thead>
                     <tbody>
                     @if(!empty($customers))
-                        {{ $customers }}
                         @foreach($customers as $customer)
                             <tr>
                                 <td>{{ $customer->name . ' ' . $customer->surname  }}</td>
-                                <td>{{ $customer->birth }}</td>
+                                <td>{{ $customer->birth->format('m/d/Y') }}</td>
                                 <td>{{ $customer->address }}</td>
                             </tr>
                         @endforeach
                     @endif
                     </tbody>
                 </table>
+                    {{ $customers->render('pagination::default') }}
             </div>
         </div>
     </section>

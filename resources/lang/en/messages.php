@@ -20,6 +20,11 @@ return [
     'total-expenses' => 'Total Expenses',
     'total-customers' => 'Total Customers',
     'total-orders' => 'Total Orders',
+    'products' => 'Products',
+    'suppliers' => 'Suppliers',
+    'sellers' => 'Sellers',
+    'notes' => 'Notes',
+    'stocks' => 'Stocks',
     '404-not-found' => '404 Not Found :/',
     '404-message' => 'The page you try to open couldn\'t found on the server. We\'re sorry.'
 ];
