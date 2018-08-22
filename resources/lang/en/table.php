@@ -9,5 +9,6 @@
 return [
     'name-surname' => 'Name / Surname',
     'birth-date' => 'Birth Date',
-    'address' => 'Address'
+    'address' => 'Address',
+    'email' => 'E-Mail',
 ];

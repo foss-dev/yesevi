@@ -16,10 +16,16 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+// GET ROUTES
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/customers', 'CustomerController@index')->name('customers');
 
 Route::get('/customers/{id}', 'CustomerController@get')->name('customer');
+
+Route::get('/users', 'UserController@index')->name('users');
+
+// POST ROUTES
 
 Route::post('/customers', 'CustomerController@store')->name('save_customers');

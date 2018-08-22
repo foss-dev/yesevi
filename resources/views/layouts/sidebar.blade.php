@@ -43,6 +43,14 @@
             </a>
         </li>
     </ul>
+    <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.users')  }}</p>
+    <ul class="menu-list">
+        <li>
+            <a href="{{ url('users')  }}" class="">
+                <span class="icon"><i class="fas fa-user-friends"></i></span> {{ __('messages.users')  }}
+            </a>
+        </li>
+    </ul>
     <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.profile')  }}</p>
     <ul class="menu-list">
         <li>

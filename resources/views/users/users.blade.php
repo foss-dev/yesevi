@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    {{ __('messages.title') }}
+    {{ __('messages.title') . ' - ' . __('messages.users') }}
 @endsection
 
 @section('content')
@@ -18,28 +18,28 @@
 
 
                 <div class="table-container">
-                    <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth table-responsive">
                         <thead>
                         <tr>
                             <th>{{ __('table.name-surname') }}</th>
-                            <th>{{ __('table.birth-date') }}</th>
-                            <th>{{ __('table.address') }}</th>
+                            <th>{{ __('table.email') }}</th>
+                            <th>Admin</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @if(!empty($customers))
-                            @foreach($customers as $customer)
+                        @if(!empty($users))
+                            @foreach($users as $user)
                                 <tr>
-                                    <td>{{ $customer->name . ' ' . $customer->surname  }}</td>
-                                    <td>{{ $customer->birth->format('m/d/Y') }}</td>
-                                    <td>{{ $customer->address }}</td>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->is_admin ? __('messages.yes') : __('messages.no') }}</td>
                                 </tr>
                             @endforeach
                         @endif
                         </tbody>
                     </table>
                 </div>
-                {{ $customers->render('pagination::default') }}
+                {{ $users->render('pagination::default') }}
             </div>
         </div>
     </section>
