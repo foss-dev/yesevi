@@ -14,6 +14,11 @@
                 <span class="icon"><i class="fas fa-users"></i></span> {{ __('messages.customers')  }}
             </a>
         </li>
+        <li>
+            <a href="{{ url('customer-groups')  }}">
+                <span class="icon"><i class="fas fa-users-cog"></i></span> {{ __('messages.customer-groups')  }}
+            </a>
+        </li>
     </ul>
     <p class="menu-label sidebar-label is-hidden-touch">{{ __('messages.invoices')  }}</p>
     <ul class="menu-list">
