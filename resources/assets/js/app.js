@@ -1,3 +1,5 @@
+import BulmaModal from "./bulma_modal"
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -24,50 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-class BulmaModal {
-    constructor(selector) {
-        this.elem = document.querySelector(selector)
-        this.close_data()
-    }
+var userModal = new BulmaModal("#user-modal");
+var addUserbutton = document.querySelector(".add-new-user");
 
-    show() {
-        this.elem.classList.toggle('is-active')
-        this.on_show()
-    }
-
-    close() {
-        this.elem.classList.toggle('is-active')
-        this.on_close()
-    }
-
-    close_data() {
-        var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
-        var that = this
-        modalClose.forEach(function(e) {
-            e.addEventListener("click", function() {
-
-                that.elem.classList.toggle('is-active')
-
-                var event = new Event('modal:close')
-
-                that.elem.dispatchEvent(event);
-            })
-        })
-    }
-
-    on_show() {
-        var event = new Event('modal:show')
-
-        this.elem.dispatchEvent(event);
-    }
-
-    on_close() {
-        var event = new Event('modal:close')
-
-        this.elem.dispatchEvent(event);
-    }
-
-    addEventListener(event, callback) {
-        this.elem.addEventListener(event, callback)
-    }
-}
+addUserbutton.addEventListener('click', function () {
+    userModal.show();
+});
