@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <section class="columns is-multiline is-fullheight">
+    <section class="columns is-multiline is-fullheight hero-body">
         <div class="container column is-12">
             <div class="content has-text-centered">
                 <h1 class="title is-size-1">{{ __('messages.404-not-found') }}</h1>
