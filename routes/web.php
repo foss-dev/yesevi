@@ -29,3 +29,5 @@ Route::get('/users', 'UserController@index')->name('users');
 // POST ROUTES
 
 Route::post('/customers', 'CustomerController@store')->name('save_customers');
+
+Route::post('/users', 'UserController@store')->name('save_users');
