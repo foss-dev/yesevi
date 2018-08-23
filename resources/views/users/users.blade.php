@@ -40,6 +40,6 @@
             </div>
         </div>
     </section>
-@endsection
 
-@include('modals.user')
+    @include('modals.user')
+@endsection
