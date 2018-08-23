@@ -37,6 +37,9 @@ return [
     'account-to-account' => 'Transfer',
     'username' => 'Username',
     'email' => 'E-Mail',
+    'password' => 'Password',
+    'name' => 'Name',
+    'confirm-password' => 'Confirm Password',
     '404-not-found' => '404 Not Found :/',
     '404-message' => 'The page you try to open couldn\'t found on the server. We\'re sorry.'
 ];
